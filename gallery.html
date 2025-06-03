@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Wanderlust Explorers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section - Start -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Wander<span>lust</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section - End -->
+
+    <!-- Hero Section - Start -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900/?travel');">
+        <div class="hero-content">
+            <h1>Travel Photo Gallery</h1>
+            <p>Explore the world through our travelers' eyes</p>
+        </div>
+    </section>
+    <!-- Hero Section - End -->
+
+    <!-- Gallery Section - Start -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Travel Gallery</h2>
+                <p>A collection of breathtaking moments from around the globe</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="beach">Beaches</button>
+                <button class="filter-btn" data-filter="city">Cities</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="people">People</button>
+            </div>
+            
+            <div class="gallery-container">
+                <!-- Nature Category -->
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://source.unsplash.com/random/800x800/?mountains" alt="Mountain View">
+                    <div class="overlay">
+                        <h3>Swiss Alps</h3>
+                        <p>Majestic mountain peaks in Switzerland</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://source.unsplash.com/random/800x800/?forest" alt="Forest">
+                    <div class="overlay">
+                        <h3>Amazon Rainforest</h3>
+                        <p>Lush greenery in the heart of Brazil</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://source.unsplash.com/random/800x800/?waterfall" alt="Waterfall">
+                    <div class="overlay">
+                        <h3>Victoria Falls</h3>
+                        <p>Breathtaking waterfall between Zambia and Zimbabwe</p>
+                    </div>
+                </div>
+                
+                <!-- Beach Category -->
+                <div class="gallery-item" data-category="beach">
+                    <img src="https://source.unsplash.com/random/800x800/?tropicalbeach" alt="Tropical Beach">
+                    <div class="overlay">
+                        <h3>Phi Phi Islands</h3>
+                        <p>Crystal clear waters in Thailand</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="beach">
+                    <img src="https://source.unsplash.com/random/800x800/?maldives" alt="Maldives">
+                    <div class="overlay">
+                        <h3>Maldives</h3>
+                        <p>Overwater bungalows in paradise</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="beach">
+                    <img src="https://source.unsplash.com/random/800x800/?coastline" alt="Coastline">
+                    <div class="overlay">
+                        <h3>Amalfi Coast</h3>
+                        <p>Stunning Italian coastline</p>
+                    </div>
+                </div>
+                
+                <!-- City Category -->
+                <div class="gallery-item" data-category="city">
+                    <img src="https://source.unsplash.com/random/800x800/?newyork" alt="New York">
+                    <div class="overlay">
+                        <h3>New York City</h3>
+                        <p>Urban jungle with iconic skyscrapers</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="city">
+                    <img src="https://source.unsplash.com/random/800x800/?tokyo" alt="Tokyo">
+                    <div class="overlay">
+                        <h3>Tokyo</h3>
+                        <p>Neon lights and urban wonders</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="city">
+                    <img src="https://source.unsplash.com/random/800x800/?paris" alt="Paris">
+                    <div class="overlay">
+                        <h3>Paris</h3>
+                        <p>City of lights and romance</p>
+                    </div>
+                </div>
+                
+                <!-- Adventure Category -->
+                <div class="gallery-item" data-category="adventure">
+                    <img src="https://source.unsplash.com/random/800x800/?hiking" alt="Hiking">
+                    <div class="overlay">
+                        <h3>Inca Trail</h3>
+                        <p>Hiking to Machu Picchu</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="adventure">
+                    <img src="https://source.unsplash.com/random/800x800/?diving" alt="Diving">
+                    <div class="overlay">
+                        <h3>Great Barrier Reef</h3>
+                        <p>Underwater adventures in Australia</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="adventure">
+                    <img src="https://source.unsplash.com/random/800x800/?safari" alt="Safari">
+                    <div class="overlay">
+                        <h3>Serengeti Safari</h3>
+                        <p>Wildlife encounters in Tanzania</p>
+                    </div>
+                </div>
+                
+                <!-- Food Category -->
+                <div class="gallery-item" data-category="food">
+                    <img src="https://source.unsplash.com/random/800x800/?italianfood" alt="Italian Food">
+                    <div class="overlay">
+                        <h3>Italian Cuisine</h3>
+                        <p>Pasta and pizza in Rome</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="https://source.unsplash.com/random/800x800/?sushi" alt="Sushi">
+                    <div class="overlay">
+                        <h3>Japanese Sushi</h3>
+                        <p>Fresh seafood delicacies in Tokyo</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="https://source.unsplash.com/random/800x800/?streetfood" alt="Street Food">
+                    <div class="overlay">
+                        <h3>Thai Street Food</h3>
+                        <p>Vibrant flavors in Bangkok</p>
+                    </div>
+                </div>
+                
+                <!-- People Category -->
+                <div class="gallery-item" data-category="people">
+                    <img src="https://source.unsplash.com/random/800x800/?tribalpeople" alt="Tribal People">
+                    <div class="overlay">
+                        <h3>Masai Tribe</h3>
+                        <p>Cultural traditions in Kenya</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="people">
+                    <img src="https://source.unsplash.com/random/800x800/?localpeople" alt="Local People">
+                    <div class="overlay">
+                        <h3>Vietnamese Farmers</h3>
+                        <p>Rice field workers in Sapa</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="people">
+                    <img src="https://source.unsplash.com/random/800x800/?festival" alt="Festival">
+                    <div class="overlay">
+                        <h3>Holi Festival</h3>
+                        <p>Colorful celebrations in India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section - End -->
+
+    <!-- Travelers Stories - Start -->
+    <section style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travelers' Stories</h2>
+                <p>Personal experiences and amazing moments captured by our community</p>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?traveler" alt="Traveler Story">
+                    <div class="card-content">
+                        <h3>Sarah's African Safari</h3>
+                        <p style="color: #777; margin-bottom: 10px;">June 12, 2024</p>
+                        <p>"The moment we spotted a pride of lions lounging under an acacia tree, I knew this was going to be an unforgettable experience. Our guide's knowledge of animal behavior allowed us to witness the most amazing wildlife interactions."</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Read Full Story</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?backpacker" alt="Traveler Story">
+                    <div class="card-content">
+                        <h3>Michael's Himalayan Trek</h3>
+                        <p style="color: #777; margin-bottom: 10px;">May 5, 2024</p>
+                        <p>"Standing at Everest Base Camp after 12 days of trekking was surreal. The journey was challenging but the breathtaking landscapes, friendly locals, and sense of accomplishment made every step worthwhile."</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Read Full Story</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?traveler-beach" alt="Traveler Story">
+                    <div class="card-content">
+                        <h3>Emma's Island Hopping Adventure</h3>
+                        <p style="color: #777; margin-bottom: 10px;">April 28, 2024</p>
+                        <p>"The Philippine islands exceeded all my expectations. From swimming with whale sharks in Cebu to exploring the underground river in Palawan, each day brought new discoveries and unforgettable memories."</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travelers Stories - End -->
+
+    <!-- Share Your Story - Start -->
+    <section style="text-align: center;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Share Your Travel Story</h2>
+                <p>Submit your photos and experiences to be featured in our gallery</p>
+            </div>
+            
+            <div style="max-width: 700px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <form>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                        <div style="text-align: left;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Name</label>
+                            <input type="text" placeholder="Enter your name" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                        
+                        <div style="text-align: left;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
+                            <input type="email" placeholder="Enter your email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500;">Travel Location</label>
+                        <input type="text" placeholder="Where did you travel?" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Story</label>
+                        <textarea placeholder="Share your travel experience..." style="width: 100%; height: 150px; padding: 12px; border: 1px solid #ddd; border-radius: 5px; resize: vertical;"></textarea>
+                    </div>
+                    
+                    <div style="text-align: left; margin-bottom: 30px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 500;">Upload Photos</label>
+                        <input type="file" multiple style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9;">
+                        <p style="font-size: 0.9rem; color: #777; margin-top: 5px;">You can upload up to 5 photos (max 5MB each)</p>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="padding: 12px 30px;">Submit Your Story</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Share Your Story - End -->
+
+    <!-- Newsletter - Start -->
+    <section class="newsletter" style="background-color: var(--primary-color); color: white; text-align: center; padding: 60px 0; margin-top: 80px;">
+        <div class="container">
+            <h2 style="margin-bottom: 20px; font-size: 2rem;">Join Our Travel Community</h2>
+            <p style="margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Subscribe to our newsletter and receive exclusive travel deals, insider tips, and inspiration for your next adventure.</p>
+            
+            <form style="max-width: 500px; margin: 0 auto; display: flex;">
+                <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px; border: none; border-radius: 5px 0 0 5px;">
+                <button type="submit" class="btn" style="border-radius: 0 5px 5px 0; background-color: var(--secondary-color);">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!-- Newsletter - End -->
+
+    <!-- Footer - Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wanderlust Explorers</h3>
+                    <p>Your trusted partner for unforgettable travel experiences. We bring your dream adventures to life with expertly crafted itineraries.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Popular Destinations</h3>
+                    <ul>
+                        <li><a href="#">Bali, Indonesia</a></li>
+                        <li><a href="#">Santorini, Greece</a></li>
+                        <li><a href="#">Kyoto, Japan</a></li>
+                        <li><a href="#">Machu Picchu, Peru</a></li>
+                        <li><a href="#">Amalfi Coast, Italy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@wanderlustexplorers.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Explorers. All rights reserved. | Designed by Team Project - Janush</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer - End -->
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
