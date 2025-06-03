@@ -1,0 +1,353 @@
+<!-- Irfan -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Wanderlust Explorers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section - Start -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Wander<span>lust</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section - End -->
+
+    <!-- Hero Section - Start -->
+    <section class="hero destination-hero">
+        <div class="hero-content">
+            <h1>Explore Dream Destinations</h1>
+            <p>Discover our curated selection of the world's most breathtaking locations</p>
+        </div>
+    </section>
+    <!-- Hero Section - End -->
+
+    <!-- Search Section - Start -->
+    <section style="padding: 40px 0; background-color: #f5f5f5;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <form style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                    <select style="flex: 1; min-width: 150px; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="" disabled selected>Destination</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="north-america">North America</option>
+                        <option value="south-america">South America</option>
+                        <option value="africa">Africa</option>
+                        <option value="oceania">Australia & Oceania</option>
+                    </select>
+                    
+                    <select style="flex: 1; min-width: 150px; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="" disabled selected>Travel Type</option>
+                        <option value="beach">Beach</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="wildlife">Wildlife</option>
+                        <option value="urban">Urban</option>
+                    </select>
+                    
+                    <select style="flex: 1; min-width: 150px; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="" disabled selected>Duration</option>
+                        <option value="1-3">1-3 Days</option>
+                        <option value="4-7">4-7 Days</option>
+                        <option value="8-14">8-14 Days</option>
+                        <option value="15+">15+ Days</option>
+                    </select>
+                    
+                    <button type="submit" class="btn" style="min-width: 120px;">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Search Section - End -->
+
+    <!-- Featured Destinations - Start -->
+    <section class="featured-destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Destinations</h2>
+                <p>Explore our handpicked selection of amazing places to visit</p>
+            </div>
+            
+            <div class="card-container">
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/random/600x800/?paris" alt="Paris">
+                    <div class="destination-info">
+                        <h3>Paris, France</h3>
+                        <p>The city of lights and romance</p>
+                        <p class="price">From $1,299</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/random/600x800/?maldives" alt="Maldives">
+                    <div class="destination-info">
+                        <h3>Maldives</h3>
+                        <p>Paradise islands with crystal clear waters</p>
+                        <p class="price">From $2,499</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/random/600x800/?newyork" alt="New York">
+                    <div class="destination-info">
+                        <h3>New York, USA</h3>
+                        <p>The city that never sleeps</p>
+                        <p class="price">From $1,199</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/random/600x800/?bali" alt="Bali">
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with rich culture</p>
+                        <p class="price">From $1,599</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/random/600x800/?rome" alt="Rome">
+                    <div class="destination-info">
+                        <h3>Rome, Italy</h3>
+                        <p>Ancient history and delicious cuisine</p>
+                        <p class="price">From $1,399</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/random/600x800/?tokyo" alt="Tokyo">
+                    <div class="destination-info">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Ultramodern and traditional blend</p>
+                        <p class="price">From $1,899</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Destinations - End -->
+
+    <!-- Destination Categories - Start -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore by Category</h2>
+                <p>Find your perfect vacation based on your travel preferences</p>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?beach" alt="Beach Vacations">
+                    <div class="card-content">
+                        <h3>Beach Vacations</h3>
+                        <p>Relax on pristine beaches with crystal-clear waters and soft sands. Perfect for unwinding and soaking up the sun.</p>
+                        <a href="#" class="btn">View Destinations</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?mountains" alt="Mountain Adventures">
+                    <div class="card-content">
+                        <h3>Mountain Adventures</h3>
+                        <p>Challenge yourself with hiking, climbing, and breathtaking views in the world's most majestic mountain ranges.</p>
+                        <a href="#" class="btn">View Destinations</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?city" alt="Urban Escapes">
+                    <div class="card-content">
+                        <h3>Urban Escapes</h3>
+                        <p>Immerse yourself in vibrant city life with world-class museums, restaurants, architecture, and entertainment.</p>
+                        <a href="#" class="btn">View Destinations</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?safari" alt="Wildlife Safaris">
+                    <div class="card-content">
+                        <h3>Wildlife Safaris</h3>
+                        <p>Get up close to incredible animals in their natural habitats with guided tours led by experienced naturalists.</p>
+                        <a href="#" class="btn">View Destinations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Destination Categories - End -->
+
+    <!-- Special Offers - Start -->
+    <section style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Special Offers</h2>
+                <p>Limited-time deals on our most popular destinations</p>
+            </div>
+            
+            <div class="card-container">
+                <div class="card" style="border-left: 5px solid var(--accent-color);">
+                    <div class="card-content">
+                        <span style="background-color: var(--accent-color); color: white; padding: 5px 10px; border-radius: 3px; font-size: 0.8rem; margin-bottom: 15px; display: inline-block;">30% OFF</span>
+                        <h3>Greek Islands Hopping</h3>
+                        <p>10 days exploring Santorini, Mykonos, and Crete. Includes accommodation, ferry transfers, and guided tours.</p>
+                        <p style="font-weight: bold; margin: 10px 0;">$1,899 <span style="text-decoration: line-through; color: #999; font-weight: normal;">$2,699</span></p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="card" style="border-left: 5px solid var(--accent-color);">
+                    <div class="card-content">
+                        <span style="background-color: var(--accent-color); color: white; padding: 5px 10px; border-radius: 3px; font-size: 0.8rem; margin-bottom: 15px; display: inline-block;">20% OFF</span>
+                        <h3>Thailand Adventure</h3>
+                        <p>14 days exploring Bangkok, Chiang Mai, and the southern beaches. Includes accommodation and cultural experiences.</p>
+                        <p style="font-weight: bold; margin: 10px 0;">$1,599 <span style="text-decoration: line-through; color: #999; font-weight: normal;">$1,999</span></p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="card" style="border-left: 5px solid var(--accent-color);">
+                    <div class="card-content">
+                        <span style="background-color: var(--accent-color); color: white; padding: 5px 10px; border-radius: 3px; font-size: 0.8rem; margin-bottom: 15px; display: inline-block;">25% OFF</span>
+                        <h3>Costa Rica Eco Tour</h3>
+                        <p>8 days of rainforest adventures, wildlife spotting, and beach relaxation. Sustainable tourism at its best.</p>
+                        <p style="font-weight: bold; margin: 10px 0;">$1,299 <span style="text-decoration: line-through; color: #999; font-weight: normal;">$1,699</span></p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Special Offers - End -->
+
+    <!-- FAQ Section - Start -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about booking your dream destination</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 20px; background-color: white; border-radius: 5px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 10px; font-size: 1.2rem;">What is the best time to visit Bali?</h3>
+                    <p>The best time to visit Bali is during the dry season from April to October. This period offers sunny days perfect for beach activities and outdoor adventures. The peak tourist season is in July and August.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; border-radius: 5px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Do I need a visa to travel to Japan?</h3>
+                    <p>Visa requirements for Japan depend on your nationality. Many countries have visa-free arrangements for tourist stays up to 90 days. We recommend checking with the Japanese embassy or consulate in your country for the most up-to-date information.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; border-radius: 5px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 10px; font-size: 1.2rem;">How far in advance should I book my trip?</h3>
+                    <p>For popular destinations during peak season, we recommend booking 6-8 months in advance to secure the best accommodations and prices. For off-season travel, 3-4 months advance booking is usually sufficient.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; border-radius: 5px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 10px; font-size: 1.2rem;">What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. For certain destinations, we also offer installment payment plans to help you budget for your dream vacation.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; border-radius: 5px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 10px; font-size: 1.2rem;">Are your tours suitable for solo travelers?</h3>
+                    <p>Absolutely! Many of our tours are perfect for solo travelers. We offer both private tours and group options where you can meet like-minded travelers. We also have special departures designed specifically for solo adventurers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section - End -->
+
+    <!-- Newsletter - Start -->
+    <section class="newsletter" style="background-color: var(--primary-color); color: white; text-align: center; padding: 60px 0;">
+        <div class="container">
+            <h2 style="margin-bottom: 20px; font-size: 2rem;">Get Travel Inspiration</h2>
+            <p style="margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Subscribe to our newsletter for exclusive deals, travel tips, and destination guides delivered straight to your inbox.</p>
+            
+            <form style="max-width: 500px; margin: 0 auto; display: flex;">
+                <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px; border: none; border-radius: 5px 0 0 5px;">
+                <button type="submit" class="btn" style="border-radius: 0 5px 5px 0; background-color: var(--secondary-color);">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!-- Newsletter - End -->
+
+    <!-- Footer - Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wanderlust Explorers</h3>
+                    <p>Your trusted partner for unforgettable travel experiences. We bring your dream adventures to life with expertly crafted itineraries.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Popular Destinations</h3>
+                    <ul>
+                        <li><a href="#">Bali, Indonesia</a></li>
+                        <li><a href="#">Santorini, Greece</a></li>
+                        <li><a href="#">Kyoto, Japan</a></li>
+                        <li><a href="#">Machu Picchu, Peru</a></li>
+                        <li><a href="#">Amalfi Coast, Italy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@wanderlustexplorers.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Explorers. All rights reserved. | Designed by Team Project - Mohammed Irfan</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer - End -->
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
